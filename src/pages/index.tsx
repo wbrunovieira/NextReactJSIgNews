@@ -1,5 +1,6 @@
 import styles from './home.module.scss';
 import Head from 'next/head';
+import { SubscribeButton } from '../components/SubscribeButton/Index';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
        <Head>
         <title>Home | ig.news</title>
       </Head>
-      
+
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
           <span>🎉️ Hey, welcome</span>
@@ -19,7 +20,7 @@ export default function Home() {
             <span>from 9.90 / month</span>
           </p>
 
-          
+          <SubscribeButton />
         </section>
 
         <img src="/images/avatar.svg" alt="Girl coding" />
